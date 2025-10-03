@@ -62,7 +62,7 @@ class _AddPostState extends State<AddPost> {
 
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("✅ Post uploaded successfully")));
+      ).showSnackBar(SnackBar(content: Text("Post uploaded successfully")));
 
       _placeController.clear();
       _cityController.clear();
@@ -73,7 +73,7 @@ class _AddPostState extends State<AddPost> {
     } catch (e) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text("❌ Upload failed: $e")));
+      ).showSnackBar(SnackBar(content: Text("Upload failed: $e")));
     }
   }
 
